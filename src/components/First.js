@@ -15,10 +15,10 @@ const First = () => {
             console.log(data)
         }
     }
-    return (
+    return (    
         <div class="container mt-3">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
-            {getdata.map((item,index) =>{
+            {(getdata || []).map((item,index) =>{
                 return(
                     <div class="card" style={{width: "400px"}}>
                     <img class="card-img-top" src={item.urlToImage} alt="Card image" />
