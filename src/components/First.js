@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 
 const First = () => {
     const [getdata, setgetdata] = useState([])
+    const [data, setdata] = useState([])
     useEffect(() => {
         fetchdata()
     }, [])
